@@ -1,0 +1,79 @@
+<!-- crear marcas para un blog con un comentario de par y comentarios:
+- Utilizar contenedores diferentes y apropiadas para la entrada en el blog,
+y el comentario de los comentarios.
+- La entrada en el blog debe tener: título, subtítulo, fecha, autor (con un
+enlace a su página web), el texto y la imagen, una lista y algunas citas de
+extracción.
+- La forma de comentario debe tener: Nombre de campo, campo de correo electrónico,
+espacio para escribir, un "recordar mis datos" opción y un botón de envío -->
+
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+<!-- all the metas will go here: SEO inclusive -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" href="/css/master.css" media="screen" title="no title" charset="utf-8">
+   <title>Blog Exercise | Ironhack</title>
+
+</head>
+<body>
+  <header> <!-- On header will go usually the menu with the <nav> label -->
+  </header>  
+  <article>
+   <h1>Title of the blog Page</h1>
+   <h2>This will be the subtitle of my Blog</h2>
+   <span class="post-label">Posted by</span>
+   <time datetime="2016-04-23T18:22">23 April of 2016 at 18:22h</time>
+   <span class="author-label">Posted by</span>
+   <a class="author-link" href="http://www.authorpage.com"</a>
+   <div class"text post">
+     <img src="http://adaptly-com-public.s3.amazonaws.com/wp-content/uploads/2015/03/09165456/New-Native-Blog-Header.jpg" alt ="This is my blog Header" title="This is my blog header title">
+     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam diam
+       nisi, mollis feugiat mi eu, viverra blandit nisl. In pulvinar ante eu
+       lacus efficitur, in rhoncus quam consectetur. Nunc lobortis, tortor id
+       feugiat pulvinar, turpis nibh sagittis nunc, vitae gravida sapien tortor
+       non sapien. Vivamus risus enim, sagittis sit amet augue non, sollicitudin
+       finibus massa. Aliquam erat volutpat. Vestibulum sed lorem ultricies,
+       sagittis turpis et, dictum eros. Donec fringilla nisl a laoreet venenatis.
+       Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+       inceptos himenaeos. Cras laoreet velit egestas urna sodales dignissim.</p>
+
+     <p>Etiam ac fringilla sapien. Pellentesque faucibus ut dolor at volutpat.
+       Curabitur sit amet ante et risus feugiat ultrices non eu leo. Vestibulum
+        vestibulum tortor sollicitudin tellus lobortis lobortis. Mauris a
+        pulvinar felis. Phasellus ut volutpat odio, et tincidunt ex. Maecenas
+        ac nulla eget enim vestibulum semper non vitae ante. Fusce sagittis a
+        uctor lacus, in aliquam sem molestie eget.</p>
+     <ul>
+       <li> 1 item of my list </li>
+       <li> 2 item of my list </li>
+       <li> 3 item of my list </li>
+       <li> 4 item of my list </li>
+       <li> 5 item of my list </li>
+       <li> 6 item of my list </li>
+     </ul>
+     <p data-pullquote="b">Cras eget metus nibh. Quisque tincidunt imperdiet orci,
+       at feugiat massa. Nunc nibh mi, lacinia quis tristique eu, pellentesque
+       quis massa. Ut non iaculis nunc, ut ultricies purus.<b>A pull quote is a
+       purely visua technique, and therefore should not change the structure of the body.
+       </b> Phasellus ut volutpat odio, et tincidunt ex. Maecenas
+       ac nulla eget enim <a href="http://lipsum.com">lispum</a> vestibulum
+       semper non vitae ante. Fusce sagittis auctor lacus, in aliquam sem
+       molestie eget.</p>
+   </div>
+  </article>
+  <section class="comment">
+    <form>
+      <p><label for="My Form"> My Form </label></p>
+      <p><input type="text" name="name" placeholder="Name"></p>
+      <p><input type="email" name="email" placeholder="john@doe.com"></p>
+      <p><input type="textarea" name="textarea" placeholder="Write your message..."></p>
+      <p><input type="checkbox" name="remenber"> Remenber my Dates<br>
+      <p><input type="submit" value="Send"></p>
+
+  </section>
+</body>
+<footer>
+</footer>
+</html>
